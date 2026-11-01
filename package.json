@@ -32,8 +32,8 @@
     "dev": "n8n-node dev",
     "lint": "n8n-node lint",
     "lint:fix": "n8n-node lint --fix",
-    "test": "n8n-node build && node --test test/",
-    "test:live": "n8n-node build && SCENTO_LIVE=1 node --test test/",
+    "test": "n8n-node build && node --test test/*.test.js",
+    "test:live": "n8n-node build && SCENTO_LIVE=1 node --test test/*.test.js",
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
